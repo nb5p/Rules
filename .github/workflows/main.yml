@@ -23,7 +23,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git commit -m "Update via GitHub Action" -a
+        git commit -m "Update via GitHub Action" -a || echo "No file changes"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
