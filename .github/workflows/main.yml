@@ -1,0 +1,30 @@
+name: Run Script
+
+on:
+  push:
+    branches: 
+      - master
+  schedule:
+    - cron: '0 19 * * SUN' # Runs at 19:00 UTC (03:00 GMT +08) on Sun
+
+jobs:
+  build:
+    name: Update Rules
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Source code
+      uses: actions/checkout@v1
+    - name: Init and exec.
+      run: |
+        cd Tools/Update
+        yarn install
+        node main.js
+    - name: Commit change
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Update via GitHub Action" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
