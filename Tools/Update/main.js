@@ -4,6 +4,8 @@ const agent = require('global-agent');
 const fs = require("fs");
 
 agent.bootstrap();
+
+// Telegram.list
 axios.get('https://core.telegram.org/resources/cidr.txt')
     .then(function (response) {
         resData = response.data;
@@ -28,4 +30,17 @@ axios.get('https://core.telegram.org/resources/cidr.txt')
         });
     }).catch(function (err) {
         console.error(err);
+    });
+
+// Neteease-Music.list
+axios.get('https://neteasemusic.xcpx.workers.dev/')
+    .then(function (response) {
+        resData = response.data;
+        var position = resData.indexOf("\n") + 1;
+        var neteasemusicText = resData.substring(position);
+        fs.writeFile(`${__dirname}/../../Surge/Rule-Set/NeteaseMusic.list`, neteasemusicText, function (err) {
+            if (err) {
+                return console.error(err);
+            }
+        });
     });
