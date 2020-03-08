@@ -1,4 +1,4 @@
 node_modules/
 
-Tools/**/package-lock.json
-Tools/**/yarn.lock
+Tools/Update/package-lock.json
+Tools/Update/yarn.lock
