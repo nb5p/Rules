@@ -1,8 +1,9 @@
-DOMAIN,xeton.io
-DOMAIN,cloudprofile.io
-DOMAIN,rixcloud.app
-DOMAIN,rixcloud.io
-DOMAIN,rixcloudkb.io
-DOMAIN,rixcloud-inc.us
-DOMAIN,rixcloudstatus.com
-DOMAIN,zeroclover.io
+DOMAIN-SUFFIX,xeton.io
+DOMAIN-SUFFIX,cloudprofile.io
+DOMAIN-SUFFIX,rixcloud.app
+DOMAIN-SUFFIX,rixcloud.dev
+DOMAIN-SUFFIX,rixcloud.io
+DOMAIN-SUFFIX,rixcloudkb.io
+DOMAIN-SUFFIX,rixcloud-inc.us
+DOMAIN-SUFFIX,rixcloudstatus.com
+DOMAIN-SUFFIX,zeroclover.io
