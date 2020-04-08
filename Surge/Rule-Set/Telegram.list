@@ -1,8 +1,8 @@
-DOMAIN-SUFFIX,t.me,force-remote-dns
-DOMAIN-SUFFIX,tdesktop.com,force-remote-dns
-DOMAIN-SUFFIX,telegra.ph,force-remote-dns
-DOMAIN-SUFFIX,telegram.me,force-remote-dns
-DOMAIN-SUFFIX,telegram.org,force-remote-dns
+DOMAIN-SUFFIX,t.me
+DOMAIN-SUFFIX,tdesktop.com
+DOMAIN-SUFFIX,telegra.ph
+DOMAIN-SUFFIX,telegram.me
+DOMAIN-SUFFIX,telegram.org
 IP-CIDR,149.154.167.99/32,no-resolve
 IP-CIDR,149.154.175.10/32,no-resolve
 IP-CIDR,149.154.167.40/32,no-resolve
