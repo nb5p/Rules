@@ -32,7 +32,7 @@ axios.get('https://core.telegram.org/resources/cidr.txt')
         console.error(err);
     });
 
-// Neteease-Music.list
+// NeteeaseMusic.list
 axios.get('https://neteasemusic.xcpx.workers.dev/')
     .then(function (response) {
         resData = response.data;
