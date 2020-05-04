@@ -23,24 +23,13 @@ axios.get('https://core.telegram.org/resources/cidr.txt')
         }
         nunjucks.configure({ autoescape: true });
         telegramText = nunjucks.render(`${__dirname}/Template/telegram.njk`, { IPv4Set, IPv6Set });
-        fs.writeFile(`${__dirname}/../../Surge/Rule-Set/Telegram.list`, telegramText, function (err) {
+        fs.writeFile(`${__dirname}/../../Surge/RuleSet/Telegram.list`, telegramText, function (err) {
             if (err) {
                 return console.error(err);
             }
         });
-    }).catch(function (err) {
+    })
+    .catch(function (err) {
         console.error(err);
-    });
-
-// NeteeaseMusic.list
-axios.get('https://neteasemusic.xcpx.workers.dev/')
-    .then(function (response) {
-        resData = response.data;
-        var position = resData.indexOf("\n") + 1;
-        var neteasemusicText = resData.substring(position);
-        fs.writeFile(`${__dirname}/../../Surge/Rule-Set/NeteaseMusic.list`, neteasemusicText, function (err) {
-            if (err) {
-                return console.error(err);
-            }
-        });
+        process.exit(1)
     });
