@@ -1,0 +1,8 @@
+#!name=NeteaseMusic
+#!desc=Adbolock for NeteaseMusic.
+
+[Rule]
+DOMAIN,admusicpic.music.126.net,REJECT
+DOMAIN,iadmat.nosdn.127.net,REJECT
+DOMAIN,iadmusicmat.music.126.net,REJECT
+DOMAIN,iadmusicmatvideo.music.126.net,REJECT

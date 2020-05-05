@@ -1,0 +1,8 @@
+#!name=Shimo
+#!desc=Adbolock for shimo.
+
+[URL Rewrite]
+^https?:\/\/shimo\.im\/api\/ads\?(.+) - reject
+
+[MITM]
+hostname = shimo.im
