@@ -1,9 +1,6 @@
 name: Run Script
 
 on:
-  push:
-    branches: 
-      - master
   schedule:
     - cron: '0 19 * * SUN' # Runs at 19:00 UTC (03:00 GMT +08) on Sun
 
