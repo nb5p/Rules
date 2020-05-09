@@ -1,11 +1,17 @@
 #!name=Jump Redirect
 #!desc=Skip the redirect page and jump directly.
 # Google Luck
+# Jianshu
 # Zhihu
 
 [URL Rewrite]
+# > Google Luck
 ^https:\/\/www\.google\.com\/url\?q=(.+)$ $1 302
+# > Zhihu
 ^https:\/\/link\.zhihu\.com\/\?target=http(s)?+%3A\/\/(.+)$ http$1://$2 302
 
-[MitM]
-hostname = %APPEND% www.google.com, link.zhihu.com
+[Script]
+Jianshu = type=http-request,pattern=^https?:\/\/links\.jianshu\.com\/go\?to=(.+)$,script-path=https://nb5p.github.io/Rules/Surge/Script/Jianshu.js
+
+[MITM]
+hostname = %APPEND% www.google.com, links.jianshu.com, link.zhihu.com
