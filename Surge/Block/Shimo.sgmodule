@@ -1,5 +1,5 @@
 #!name=Shimo
-#!desc=Adbolock for shimo.
+#!desc=Adblock for Shimo.
 
 [URL Rewrite]
 ^https?:\/\/shimo\.im\/api\/ads\?(.+) - reject

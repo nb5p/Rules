@@ -1,5 +1,5 @@
 #!name=NeteaseMusic
-#!desc=Adbolock for NeteaseMusic.
+#!desc=Adblock for NeteaseMusic.
 
 [Rule]
 DOMAIN,admusicpic.music.126.net,REJECT
