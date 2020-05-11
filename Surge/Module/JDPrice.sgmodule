@@ -1,9 +1,9 @@
 #!name=JD Historical Prices
-#!desc=Check JingDong historical prices.
+#!desc=Check Jingdong historical prices.
 #!system=ios
 
 [Script]
-JD Historical Prices = type=http-response,requires-body=1,max-size=0,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig),script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
+JD Historical Prices = type=http-response,pattern=^https?:\/\/api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
 
 [MITM]
 hostname = %APPEND% api.m.jd.com
