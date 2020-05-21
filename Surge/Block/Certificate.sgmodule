@@ -1,0 +1,5 @@
+#!name=Certificate
+#!desc=Block for Enterprise Certificate Verification.
+
+[Rule]
+DOMAIN,ocsp.apple.com,REJECT
