@@ -11,7 +11,7 @@
 ^https:\/\/link\.zhihu\.com\/\?target=http(s)?+%3A\/\/(.+)$ http$1://$2 302
 
 [Script]
-Jianshu = type=http-request,pattern=^https?:\/\/links\.jianshu\.com\/go\?to=(.+)$,script-path=https://nb5p.github.io/Rules/Surge/Script/Jianshu.js
+Jianshu = type=http-request,pattern=^https?:\/\/links\.jianshu\.com\/go\?to=(.+)$,script-path=https://bit.ly/2TRQaTK
 
 [MITM]
 hostname = %APPEND% www.google.com, links.jianshu.com, link.zhihu.com
