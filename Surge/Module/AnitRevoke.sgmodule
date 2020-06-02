@@ -1,0 +1,5 @@
+#!name=AnitRevoke
+#!desc=Block Enterprise Certificate Verification.
+
+[Rule]
+DOMAIN,ocsp.apple.com,REJECT

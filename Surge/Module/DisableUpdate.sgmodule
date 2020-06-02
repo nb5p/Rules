@@ -1,4 +1,4 @@
-#!name=Update
+#!name=DisableUpdate
 #!desc=Block for Apple System Update.
 
 [Rule]
