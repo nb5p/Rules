@@ -1,5 +1,5 @@
 #!name=Coderx
-#!desc=Launching Coderx for github.
+#!desc=Launch Coderx for github.
 #!system=ios
 
 [URL Rewrite]
