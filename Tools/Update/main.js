@@ -28,7 +28,7 @@ axios.get('https://core.telegram.org/resources/cidr.txt')
       IPv4Set,
       IPv6Set
     });
-    fs.writeFile(`${__dirname}/../../Surge/RuleSet/Telegram.list`, telegramText, function (err) {
+    fs.writeFile(`${__dirname}/../../Surge/Rule/Telegram.list`, telegramText, function (err) {
       if (err) {
         return console.error(err);
       }
