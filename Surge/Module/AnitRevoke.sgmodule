@@ -1,5 +1,0 @@
-#!name=AnitRevoke
-#!desc=Block Apple OCSP verification.
-
-[Rule]
-DOMAIN,ocsp.apple.com,REJECT

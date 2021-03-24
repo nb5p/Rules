@@ -1,9 +1,0 @@
-#!name=Fuck WeChat110
-#!desc=Unlock WeChat block website.
-#!system=ios
-
-[Script]
-FuckWeChat110 = type=http-response,pattern=^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/weixin110.js
-
-[MITM]
-hostname = %APPEND% weixin110.qq.com

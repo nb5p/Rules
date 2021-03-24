@@ -1,9 +1,0 @@
-#!name=FixTestflightCN
-#!desc=Fix the problem of Testflight apps not downloading.
-#!system=ios
-
-[Script]
-FixTestflight = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v2\/accounts\/.*\/apps\/\d*/builds/\d*/install,requires-body=1,max-size=0,script-path=Script/Testflight.js
-
-[MITM]
-hostname = %APPEND% testflight.apple.com
