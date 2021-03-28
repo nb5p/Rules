@@ -1,8 +1,0 @@
-#!name=Shimo
-#!desc=Adblock for Shimo.
-
-[URL Rewrite]
-^https?:\/\/shimo\.im\/api\/ads\?(.+) - reject
-
-[MITM]
-hostname = shimo.im
