@@ -3,6 +3,7 @@
 # Google Luck
 # Jianshu
 # Zhihu
+# CSDN
 
 [URL Rewrite]
 # > Google Luck
@@ -11,7 +12,9 @@
 ^https:\/\/link\.zhihu\.com\/\?target=http(s)?+%3A\/\/(.+)$ http$1://$2 302
 
 [Script]
-Jianshu = type=http-request,pattern=^https?:\/\/links\.jianshu\.com\/go\?to=(.+)$,script-path=https://bit.ly/2TRQaTK
+Jianshu-1 = type=http-request,pattern=^https?:\/\/links\.jianshu\.com\/go\?to=(.+)$,script-path=https://github.com/nb5p/Rules/raw/master/Surge/Script/Jump.js
+Jianshu-2 = type=http-request,pattern=^https?:\/\/www\.jianshu\.com\/go\-wild\?ac=\d\&url=(.+)$,script-path=https://github.com/nb5p/Rules/raw/master/Surge/Script/Jump.js
+CSDN = type=http-request,pattern=^https?:\/\/link\.csdn\.net\/\?target=(.+)$,script-path=https://github.com/nb5p/Rules/raw/master/Surge/Script/Jump.js
 
 [MITM]
-hostname = %APPEND% www.google.com, links.jianshu.com, link.zhihu.com
+hostname = %APPEND% www.google.com, link.zhihu.com, links.jianshu.com, www.jianshu.com, link.csdn.net
