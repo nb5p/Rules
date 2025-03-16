@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.28.0",
     "global-agent": "^2.1.12",
     "nunjucks": "^3.2.2"
   }
